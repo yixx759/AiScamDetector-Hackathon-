@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <title>Simple speech input for inputs and textareas</title>
+            <link rel=stylesheet type=text/css href="{{ url_for('static', filename='stylesheet.css') }}">
+        </head>
+        <body>
+            <div id = "container">
+                <div class = "header">
+                    <h1 style = "flex-grow: 1;">Scam Detective</h1>
+                    <p>Demo</p>
+                    <p>Education</p>
+                    <p>About</p>
+                </div>
+                <div class = "inputarea">
+                    <div>
+                        <p>(Mockup Ver)</p>
+                        <meter value = 0.5></meter>
+                    </div>
+                    <div class = "speech">
+                        <form action = "http://localhost:5000/" method = "post">
+                            <p><input type="text" autocomplete="off" class="speech-input" placeholder="Speech Input:" name="nm" style = "overflow-y: scroll;"> </p>
+                        </form>
+                    </div>
+                </div>
+                <div class = "result">
+                    <p>Answer of questions goes here: </p>
+                    <p>{{name}}</p>
+                </div>
+            </div>
+        <script src="{{ url_for('static', filename='speech-input.js') }}"></script>
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+        </body>
+    </html>

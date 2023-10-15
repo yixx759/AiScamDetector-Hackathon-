@@ -1,0 +1,107 @@
+html , * {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    overflow: hidden;
+    height: 100vh;
+}
+    
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#container {
+    height: 100vh;
+    background-color: rgb(235, 210, 254);
+    padding: 40px 100px 0px 100px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.header > h1 {
+    margin-left: 20px;
+}
+
+.header > p {
+    transition: 1s;
+    margin: 15px;
+}
+
+.header > p:hover {
+    border-bottom: 4px solid rgb(183, 102, 245);
+}
+.header > p:last-child {
+    margin-right: 40px;     
+}
+
+.inputarea {
+    width: 90vw;
+    margin-top: 20px;
+}
+
+.inputarea > div {
+    text-align: center;
+}
+
+.inputarea > div > meter {
+    background-image: rgb(183, 102, 245);
+    width: 50vw;
+    height: 80px;
+    -webkit-appearence: none;
+    background: none;
+}
+
+meter::-webkit-meter-optimum-value {
+    background: rgb(183, 102, 245);
+  }
+
+.speech {
+       }
+
+.speech > form {
+    flex-direction: row;
+    display: flex;
+    text-align: left;
+    align-items: center;
+}
+
+.speech > form > p {
+    font-size: x-large;
+    height: auto;
+    margin: 5px;
+}
+
+.speech > form > p > input {
+    font-size: large;
+    width: 840px;
+    margin: 5px;
+    padding: 5px;
+    height: 30px;
+}
+
+.submit {
+    width: 50px;
+    border: 1px solid rgb(183, 102, 245);
+    background-color: white;
+    border-radius: 20px;
+}
+
+.result {
+    border-top: 1px solid black;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: large
+}
+
+.micbtn {
+    background-image: url(mic.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 20px;
+}
